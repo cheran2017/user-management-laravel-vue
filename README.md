@@ -48,7 +48,7 @@ composer install
 # Install frontend dependencies
 npm install && npm run dev
 
-# Setup .env
+# Open New Terminal  & Setup .env
 cp .env.example .env
 php artisan key:generate
 
@@ -57,6 +57,9 @@ php artisan migrate
 
 # Seed some test data (optional)
 php artisan db:seed
+
+# Run Laravel using artisan command 
+php artisan serve
 
 # To Run Unit test
 php artisan test tests/Feature/UserTest.php
