@@ -58,3 +58,45 @@ php artisan migrate
 # Seed some test data (optional)
 php artisan db:seed
 
+# To Run Unit test
+php artisan test tests/Feature/UserTest.php
+
+## 📡 API: Get User Details
+
+### Endpoint:
+`GET /api/users/{user_id}`
+
+### ✅ Success Response:
+
+```json
+{
+  "status_code": 200,
+  "message": "User details",
+  "data": {
+    "user_name": "John Doe",
+    "mobile": "9345345352",
+    "dob": "14/01/1990",
+    "gender": "Male",
+    "Address": [
+      {
+        "address_type": "home",
+        "address1": {
+          "door/street": "1st Main Rd, Rajiv Nagar",
+          "landmark": "Zxy building",
+          "city": "Chennai",
+          "state": "Tamilnadu",
+          "country": "India"
+        },
+        "primary": "No"
+      }
+    ]
+  }
+}
+### ❌ Error Response (User Not Found)
+
+```json
+{
+  "status_code": 404,
+  "message": "User not found",
+  "data": null
+}
