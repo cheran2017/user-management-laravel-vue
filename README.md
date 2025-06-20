@@ -15,7 +15,7 @@ A complete User Management System built with Laravel and Vue 3 (Inertia + Breeze
 
 ## 🚀 Technologies Used
 
-- Laravel 10
+- Laravel 12
 - MySQL / SQLite (for testing)
 - Vue 3 with Inertia.js
 - Laravel Breeze (Inertia + Tailwind)
