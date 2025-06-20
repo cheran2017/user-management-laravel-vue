@@ -39,7 +39,7 @@ A complete User Management System built with Laravel and Vue 3 (Inertia + Breeze
 ## 📦 Installation
 
 ```bash
-git clone https://github.com/cheran2017/user-management.git
+git clone https://github.com/cheran2017/user-management-laravel-vue.git
 cd user-management
 
 # Install backend dependencies
